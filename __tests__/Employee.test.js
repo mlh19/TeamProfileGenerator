@@ -1,4 +1,4 @@
-const { it, expect, describe } = require("@jest/globals")
+// const { it, expect, describe } = require("@jest/globals")
 const Employee = require("../lib/Employee")
 
 describe("Employee",() => {
@@ -19,7 +19,6 @@ describe("Employee",() => {
             const employee = new Employee(name, id, email)
             expect(employee.name).toEqual(name)
         })
-
     })
     describe("Id", () => {
         it("should return an id", () => {
