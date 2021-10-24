@@ -7,7 +7,7 @@ describe("Manager",() => {
             const name = "Bob"
             const id = "10"
             const email = "test@test.com"
-            const officeNumber = "830-998-6717"
+            const officeNumber = "303"
             const manager = new Manager(name, id, email, officeNumber)
             expect(typeof(manager)).toEqual("object")
         })
@@ -17,7 +17,7 @@ describe("Manager",() => {
             const name = "Bob"
             const id = "10"
             const email = "test@test.com"
-            const officeNumber = "830-998-6717"
+            const officeNumber = "303"
             const manager = new Manager(name, id, email, officeNumber)
             expect(manager.name).toEqual(name)
         })
@@ -27,7 +27,7 @@ describe("Manager",() => {
             const name = "Bob"
             const id = "10"
             const email = "test@test.com"
-            const officeNumber = "830-998-6717"
+            const officeNumber = "303"
             const manager = new Manager(name, id, email, officeNumber)
             expect(manager.id).toEqual(id)
         })
@@ -37,7 +37,7 @@ describe("Manager",() => {
             const name = "Bob"
             const id = "10"
             const email = "test@test.com"
-            const officeNumber = "830-998-6717"
+            const officeNumber = "303"
             const manager = new Manager(name, id, email, officeNumber)
             expect(manager.email).toEqual(email)
         })
@@ -47,7 +47,7 @@ describe("Manager",() => {
             const name = "Bob"
             const id = "10"
             const email = "test@test.com"
-            const officeNumber = "830-998-6717"
+            const officeNumber = "303"
             const manager = new Manager(name, id, email, officeNumber)
             expect(manager.officeNumber).toEqual(officeNumber)
         })
