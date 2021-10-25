@@ -96,7 +96,6 @@ function promptManagerQuestions() {
     // Call the next questions.
     promptMenu();
 
-    //   fs.writeFileSync("index.html", generate.generateHtml(response))
     })
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
@@ -123,7 +122,7 @@ function promptMenu() {
         } else if (response.menuOption === 'Add an Intern') {
             promptInternQuestions();
         } else if (response.menuOption === 'Finish Building My Team') {
-            promptTeamQuestions();
+            generateData();
         } else {
             console.log("No option exists named " + response.menuOption);
         }
@@ -158,10 +157,14 @@ function promptInternQuestions() {
     promptMenu();
 
 
- fs.writeFileSync("index.html", generate.generateHtml(response))
+//  fs.writeFileSync("index.html", generate.generateHtml(response))
     })
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
+}
+
+function generateData() {
+
 }
 
 
