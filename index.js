@@ -102,6 +102,7 @@ function promptManagerQuestions() {
 }
 
 
+
 function promptMenu() {
     inquirer
     .prompt([
@@ -156,26 +157,16 @@ function promptInternQuestions() {
     teamMembers.push(intern);
     promptMenu();
 
-
-//  fs.writeFileSync("index.html", generate.generateHtml(response))
     })
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
 }
 
 function generateData() {
-
+    console.log("Success! You have created a webpage for your Team!")
+    fs.writeFileSync("index.html", generate.generateHtml(teamMembers))
 }
-
-
-
-
-
-
-
-
-
-
 
 // Entry to the Program
 promptManagerQuestions();
+
