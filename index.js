@@ -9,7 +9,7 @@ const path = require("path");
 // Team Members array of objects
 const teamMembers = [];
 // Reference to the generateHtml.js file
-const generate = require("./dist/generateHtml.js");
+const generateHtml = require("./dist/generateHtml.js");
 
 // Questions to fill in for the Manager constructor
 const managerQuestions = [
@@ -162,11 +162,21 @@ function promptInternQuestions() {
     .catch((err) => console.error(err));
 }
 
+// Function to parse data received 
 function generateData() {
-    console.log("Success! You have created a webpage for your Team!")
-    fs.writeFileSync("index.html", generate.generateHtml(teamMembers))
-}
+			fs.writeFileSync("index.html", generateHtml(teamMembers))
+            console.log("Success! You have created a webpage for your Team!")
+        
+};
 
 // Entry to the Program
 promptManagerQuestions();
 
+
+
+
+
+
+
+// Reg Ex for checking correct format of an email
+// /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}
