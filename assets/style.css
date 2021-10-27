@@ -1,0 +1,20 @@
+/* Nav bar styling  */
+.navbar {
+    text-align: center;
+    font-size: 5rem !important; 
+    background-color: lightpink !important;
+    height: 250px;
+}
+
+/* Top and bottom marginal space for the cards */
+#teamMember-cards{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Styling for the cards */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
