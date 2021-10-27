@@ -15,28 +15,39 @@ function generateHtml(data) {
         </div>
         `
     }
-    const engineer = () => {
-        const engineerData = data.filter((employee) => employee.getRole() === "Engineer")
-        ${engineerData.map((engineer) => (
-        return `
-        <div class="card-body">
-        <h4 class="card-title">${engineerData.name}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
+     const engineer = () => {
+         const engineerData = data.filter((employee) => employee.getRole() === "Engineer")
+         ${engineerData.map((Engineer) => (
+         return `
+         <div class="card-body">
+         <h4 class="card-title">${engineerData.name}</h5>
+         <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">${engineer.id}</li>
+             <li class="list-group-item">${engineer.id}</li>
             <li class="list-group-item">${engineer.email}</li>
             <li class="list-group-item">${engineer.githubUsername}</li>
-          )).join("")}
-        </ul>
-        </div>
+           )).join("")}
+         </ul>
+     </div>
         `
         }
-
-        
-        
-        `
-    }
-    return `
+        const intern = () => {
+            const internData = data.filter((employee) => employee.getRole() === "Intern")
+            ${internData.map((intern) => (
+            return `
+            <div class="card-body">
+            <h4 class="card-title">${internData.name}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
+           <ul class="list-group list-group-flush">
+                <li class="list-group-item">${intern.id}</li>
+               <li class="list-group-item">${intern.email}</li>
+               <li class="list-group-item">${intern.school}</li>
+               `)).join("")}
+            </ul>
+        </div>
+           `
+           }
+  
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -52,9 +63,9 @@ function generateHtml(data) {
     <body>
         
 
-<nav class="navbar navbar-light bg-light">
+{<nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">My Team</span>
-</nav>
+<nav>
     <div class="card" style="width: 18rem;">
         ${manager()}
     </div>
@@ -63,7 +74,10 @@ function generateHtml(data) {
     </div>
     <div class="card" style="width: 18rem;">
         ${intern()}
-    </div>
+    </div> 
+}
+    
+
         
     
     
@@ -76,17 +90,16 @@ function generateHtml(data) {
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+{/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
-</html>    
+</html>     */}
     
     
     
     
     
-    `
 
-}
+
 module.exports = generateHtml;

@@ -101,8 +101,6 @@ function promptManagerQuestions() {
     .catch((err) => console.error(err));
 }
 
-
-
 function promptMenu() {
     inquirer
     .prompt([
