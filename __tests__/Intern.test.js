@@ -1,6 +1,6 @@
 // const { it, expect, describe } = require("@jest/globals")
 const Intern = require("../lib/Intern")
-
+// Import Intern class
 describe("Intern",() => {
     describe("returns an object", () => {
         it("should return an object", () => {

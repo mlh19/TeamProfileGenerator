@@ -1,6 +1,6 @@
 // const { it, expect, describe } = require("@jest/globals")
 const Engineer = require("../lib/Engineer")
-
+// Import Engineer class
 describe("Engineer",() => {
     describe("returns an object", () => {
         it("should return an object", () => {
@@ -12,6 +12,7 @@ describe("Engineer",() => {
             expect(typeof(engineer)).toEqual("object")
         })
     }) 
+
     describe("Name", () => {
         it("should return a name", () => {
             const name = "Bob"
@@ -22,6 +23,7 @@ describe("Engineer",() => {
             expect(engineer.name).toEqual(name)
         })
     })
+
     describe("Id", () => {
         it("should return an id", () => {
             const name = "Bob"
@@ -32,6 +34,7 @@ describe("Engineer",() => {
             expect(engineer.id).toEqual(id)
         })
     })
+
     describe("Email", () => {
         it("should return an email", () => {
             const name = "Bob"
@@ -42,6 +45,7 @@ describe("Engineer",() => {
             expect(engineer.email).toEqual(email)
         })
     })
+    
     describe("githubUsername", () => {
         it("should return a username", () => {
             const name = "Bob"
