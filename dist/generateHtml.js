@@ -62,11 +62,11 @@ function generateHtml(data) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <title id="title">Team Profile Generator</title>
+    <title id="title"><h1>Team Profile Generator</h1></title>
     </head> 
 <body>
 <nav class="navbar navbar-light bg-light justify-content-center">
-    <span class="navbar-brand mb-0 h1">My Team</span>
+    <h1 id="title">My Team</h1>
 </nav>
 <div id="teamMember-Cards" class="container d-flex flex-wrap justify-content-center align-items-center">
         ${manager()}
