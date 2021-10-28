@@ -37,6 +37,7 @@ function generateHtml(data) {
     
     const intern = () => {
         const internData = data.filter((employee) => employee.getRole() === "Intern")
+        console.log(internData);
             return internData.map((intern) => `
     <div class="card m-2" style="min-width: 20rem;">
         <div class="card-body">
@@ -49,7 +50,8 @@ function generateHtml(data) {
             <li class="list-group-item">School: ${intern.school}</li>
         </ul>
         </div>
-        `).join("")}
+        `
+        ).join("")}
             return `
 </div>
     <!DOCTYPE html>

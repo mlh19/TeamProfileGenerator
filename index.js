@@ -69,7 +69,7 @@ const internQuestions = [
 	{
 		type: 'input',
 		message: "What is the Intern's ID number?",
-		name: 'managerId',
+		name: 'internId',
 	},
 	{
         type: 'input',
