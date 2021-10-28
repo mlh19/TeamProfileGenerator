@@ -30,7 +30,13 @@ THEN I exit the application, and the HTML is generated
 
 # Screenshot | Video
 
+[Link to Video](https://watch.screencastify.com/v/I7L3aQP4WYr7fkAJuLVL)
+
+![Screenshot](./assets/images/screenshot.png)
+
 # Deployed Link
+
+[GitHub Pages Link](https://mlh19.github.io/TeamProfileGenerator/)
 
 # Other Details
 
